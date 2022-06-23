@@ -27,7 +27,7 @@ public class Notebook : MonoBehaviour
             
 
             if(Input.GetKeyDown(KeyCode.Return)){//если нажади ENTER
-            EddRecord();//добавляем запись
+            AddRecord();//добавляем запись
         }
         }
         else if (openNotebook==false)//если дневник закрыт
@@ -49,7 +49,7 @@ public class Notebook : MonoBehaviour
         
     }
     //добавление записи
-    public void EddRecord()
+    public void AddRecord()
     {
         countS+=1;//прибавлем к счетчику 1
         textUI.text=textUI.text+"\n"+countS+". "+inpF.text;//вводим новый текст с новой строки и с выводом счетчика
